@@ -1,23 +1,26 @@
-# Hello world docker action
+# Balena Push
 
-This action prints "Hello World" to the log or "Hello" + the name of a person to greet. To learn how this action was built, see "[Creating a Docker container action](https://help.github.com/en/articles/creating-a-docker-container-action)" in the GitHub Help documentation.
+Continuously deliver your applications to [BalenaCloud](https://www.balena.io/).
 
 ## Inputs
 
-### `who-to-greet`
+### `api-token`
 
-**Required** The name of the person to greet. Default `"World"`.
+**Required**: Used by the action to authenticate with your BalenaCloud account.  APIs can be created [here](https://dashboard.balena-cloud.com/preferences/access-tokens) (requires web login).
 
-## Outputs
+### `application-name`
 
-### `time`
+**Required**: The application on BalenaCloud you are targeting with the push action.
 
-The time we greeted you.
+### `application-path`
+
+_Optional_: Provide a sub-path to the location for application being deployed to BalenaCloud.  Defaults to the workspace root.   
 
 ## Example usage
 
 ```yaml
-uses: actions/hello-world-docker-action@master
+uses: theaccordnace/balena-push@master
 with:
-  who-to-greet: 'Mona the Octocat'
+  api-token: ${{secrets.BALENA_API_TOKEN}}
+  application-name: ${{secrets.BALENA_APPLICATION_NAME}}
 ```

@@ -1,15 +1,22 @@
-name: 'Hello World'
-description: 'Greet someone and record the time'
+name: 'Balena Push'
+branding:
+  color: "yellow"
+  icon: "upload-cloud"
+description: 'Continuously deliver your application to BalenaCloud'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  api-token:
+    description: 'API Key to interact with BalenaCloud'
     required: true
-    default: 'World'
-outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+  application-name:
+    description: "name of the BalenaCloud application"
+    required: true
+  application-path:
+    description: "Optional. Provide a subfolder path, example: ./balena-wpe"
+    default: "."
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - ${{ inputs.who-to-greet }}
+  env:
+    API_TOKEN: ${{ inputs.api-token }}
+    APPLICATION_NAME: ${{ inputs.application-name }}
+    APPLICATION_PATH: ${{ inputs.application-path }}
