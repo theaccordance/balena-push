@@ -32,6 +32,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - uses: actions/setup-node@v1.1.0
+    - uses: theaccordance/balena-push@master
       with:
         api-token: ${{secrets.BALENA_API_TOKEN}}
         application-name: ${{secrets.BALENA_APPLICATION_NAME}}
