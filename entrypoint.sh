@@ -1,3 +1,3 @@
 #!/bin/sh -l
 
-env && balena login --token $API_TOKEN && cd $APPLICATION_PATH && balena push $APPLICATION_NAME
+cd $GITHUB_WORKSPACE && cd $APPLICATION_PATH && balena login --token $1 && balena push $2

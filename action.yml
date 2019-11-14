@@ -20,7 +20,8 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   env:
-    API_TOKEN: ${{ inputs.api-token }}
     APPLICATION_NAME: ${{ inputs.application-name }}
-    APPLICATION_PATH: ${{ inputs.application-path }}
     DEBUG: ${{ inputs.enable-debug }}
+  args:
+    - ${{ inputs.api-token }}
+    - ${{ inputs.application-name }}
