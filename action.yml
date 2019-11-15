@@ -13,9 +13,6 @@ inputs:
   application-path:
     description: "Optional. Provide a subfolder path, example: ./balena-wpe"
     default: "."
-  enable-debug:
-    description: "Optional, provide more verbose feedback."
-    default: 0
 runs:
   using: 'docker'
   image: 'Dockerfile'
@@ -23,4 +20,3 @@ runs:
     API_TOKEN: ${{ inputs.api-token }}
     APPLICATION_NAME: ${{ inputs.application-name }}
     APPLICATION_PATH: ${{ inputs.application-path }}
-    DEBUG: ${{ inputs.enable-debug }}
