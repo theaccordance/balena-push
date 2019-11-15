@@ -6,7 +6,7 @@ Continuously deliver your applications to [BalenaCloud](https://www.balena.io/).
 
 ### `api-token`
 
-**Required**: Used by the action to authenticate with your BalenaCloud account.  APIs can be created [here](https://dashboard.balena-cloud.com/preferences/access-tokens) (requires web login).
+**Required**: Used by the action to authenticate with your BalenaCloud account.  API keys can be created [here](https://dashboard.balena-cloud.com/preferences/access-tokens) (requires web login).
 
 ### `application-name`
 
