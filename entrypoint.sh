@@ -1,3 +1,7 @@
 #!/bin/sh -l
 
-cd $GITHUB_WORKSPACE && cd $APPLICATION_PATH && balena login --token $1 && balena push $2
+echo "Change directory to application path"
+cd ${GITHUB_WORKSPACE} && cd ${APPLICATION_PATH}
+
+echo "Login to BalenaCloud"
+balena login --token ${API_TOKEN} && balena push ${APPLICATION_NAME}
