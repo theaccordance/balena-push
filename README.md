@@ -6,11 +6,11 @@ Continuously deliver your applications to [BalenaCloud](https://www.balena.io/).
 
 ### `api-token`
 
-**Required**: Used by the action to authenticate with your BalenaCloud account.  APIs can be created [here](https://dashboard.balena-cloud.com/preferences/access-tokens) (requires web login).
+**Required**: A BalenaCloud API Token, used to authenticate with BalenaCloud.  API keys can be created in the [user settings for BalenaCloud](https://dashboard.balena-cloud.com/preferences/access-tokens).
 
 ### `application-name`
 
-**Required**: The application on BalenaCloud you are targeting with the push action.
+**Required**: The target application on BalenaCloud
 
 ### `application-path`
 
@@ -32,7 +32,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - uses: actions/setup-node@v1.1.0
-    - uses: theaccordance/balena-push@master
+    - uses: theaccordance/balena-push@v1.0.0
       with:
         api-token: ${{secrets.BALENA_API_TOKEN}}
         application-name: ${{secrets.BALENA_APPLICATION_NAME}}

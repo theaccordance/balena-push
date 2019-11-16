@@ -2,16 +2,16 @@ name: 'Balena Push'
 branding:
   color: "yellow"
   icon: "upload-cloud"
-description: 'Continuously deliver your application to BalenaCloud'
+description: 'Continuously deliver your IoT applications to BalenaCloud'
 inputs:
   api-token:
-    description: 'API Key to interact with BalenaCloud'
+    description: 'BalenaCloud API Key'
     required: true
   application-name:
-    description: "name of the BalenaCloud application"
+    description: "The name of the BalenaCloud Application that you'll be pushing to"
     required: true
   application-path:
-    description: "Optional. Provide a subfolder path, example: ./balena-wpe"
+    description: "Optional. Provide a subfolder path to your BalenaCloud application, example: ./balena-wpe"
     default: "."
 runs:
   using: 'docker'
