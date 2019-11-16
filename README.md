@@ -6,11 +6,11 @@ Continuously deliver your applications to [BalenaCloud](https://www.balena.io/).
 
 ### `api-token`
 
-**Required**: Used by the action to authenticate with your BalenaCloud account.  API keys can be created [here](https://dashboard.balena-cloud.com/preferences/access-tokens) (requires web login).
+**Required**: A BalenaCloud API Token, used to authenticate with BalenaCloud.  API keys can be created in the [user settings for BalenaCloud](https://dashboard.balena-cloud.com/preferences/access-tokens).
 
 ### `application-name`
 
-**Required**: The application on BalenaCloud you are targeting with the push action.
+**Required**: The target application on BalenaCloud
 
 ### `application-path`
 
