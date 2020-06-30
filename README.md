@@ -1,6 +1,6 @@
-# Balena Push
+# Balena Deploy
 
-Continuously deliver your applications to [BalenaCloud](https://www.balena.io/).
+Continuously deliver your applications to [BalenaCloud](https://www.balena.io/). A faster drop-in replacement to [Balena Push](https://github.com/theaccordance/balena-push).
 
 ## Inputs
 
@@ -32,7 +32,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - uses: actions/setup-node@v1.1.0
-    - uses: theaccordance/balena-push@v1.0.0
+    - uses: amingilani/balena-push@v1.0.1
       with:
         api-token: ${{secrets.BALENA_API_TOKEN}}
         application-name: ${{secrets.BALENA_APPLICATION_NAME}}
