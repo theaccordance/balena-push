@@ -1,8 +1,8 @@
-name: 'Balena Deploy'
+name: 'Push to BalenaCloud'
 branding:
   color: "yellow"
   icon: "box"
-description: 'Automatically deploy your code to BalenaCloud'
+description: 'Push your code to BalenaCloud using balena-cli'
 inputs:
   api-token:
     description: 'BalenaCloud API Key'
