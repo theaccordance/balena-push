@@ -18,11 +18,11 @@ _Optional_: Provide a sub-path to the location for application being deployed to
 
 ### `release-tag-key`
 
-_Optional_: Key for Balena release tag.
+**Required**: Key for Balena release tag.
 
 ### `release-tag-value`
 
-_Optional_: Value for Balena release tag.
+**Required**: Value for Balena release tag.
 
 ## Workflow Example
 ```yaml
@@ -44,4 +44,6 @@ jobs:
         api-token: ${{secrets.BALENA_API_TOKEN}}
         application-name: ${{secrets.BALENA_APPLICATION_NAME}}
         application-path: "./balena-wpe"
+        release-tag-key: Release
+        release-tag-value: 1.0
 ```
