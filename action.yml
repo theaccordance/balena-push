@@ -1,4 +1,4 @@
-name: 'Push to BalenaCloud'
+name: 'Push to Balena with tag'
 branding:
   color: "yellow"
   icon: "box"
