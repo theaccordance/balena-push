@@ -15,10 +15,10 @@ jobs:
       - uses: actions/stale@main
         id: stale
         with:
-          stale-issue-message: 'Warning, this issue has gone 30 days without activity.  If you are waiting on the project owner, ping him directly @theaccordance'
-          close-message: 'This issue has been closed after 60 days of inactivity.  If you are waiting on the owner to act, you are welcome to ping him on other platforms, https://contact.mainwaring.dev'
-          days-before-pr-stale: 30
-          days-before-pr-close: 30
+          stale-issue-message: 'Warning, this issue has gone 30 days without activity.  If you are waiting on the project owner to act, please ping @theaccordance'
+          close-issue-message: 'This issue has been closed after 60 days of inactivity.  If you are waiting on the owner to act, you are welcome to ping him on other platforms, https://contact.mainwaring.dev'
+          days-before-issue-stale: 30
+          days-before-issue-close: 30
           exempt-draft-pr: true
       - name: Print outputs
         run: echo ${{ join(steps.stale.outputs.*, ',') }}
