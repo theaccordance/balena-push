@@ -1,4 +1,13 @@
 # Balena Push
+[![CodeFactor](https://www.codefactor.io/repository/github/theaccordance/balena-push/badge)](https://www.codefactor.io/repository/github/theaccordance/balena-push)
+![Latest Version](https://img.shields.io/github/v/release/theaccordance/balena-push?label=Latest%20Version)
+![Last Commit](https://img.shields.io/github/last-commit/theaccordance/balena-push)
+![Open Bugs](https://img.shields.io/github/issues/theaccordance/balena-push/bug?color=red&label=Bugs)
+![Feature Requests](https://img.shields.io/github/issues/theaccordance/balena-push/enhancement?color=blue&label=Feature%20Requests)
+![Forks](https://img.shields.io/github/forks/theaccordance/balena-push?label=Forks)
+![Stars](https://img.shields.io/github/stars/theaccordance/balena-push?label=Stars)
+![License](https://img.shields.io/github/license/theaccordance/balena-push)
+
 
 Continuously deliver your applications to [BalenaCloud](https://www.balena.io/).
 
