@@ -1,0 +1,24 @@
+# Workflow Documentation: https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
+name: Stale PR Janitor
+permissions:
+  pull-requests: write
+on:
+  workflow_dispatch:
+  schedule:
+    # Run daily at 01:00
+    - cron: '0 1 * * *'
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      # actions/stale Documentation: https://github.com/actions/stale
+      - uses: actions/stale@main
+        id: stale
+        with:
+          stale-issue-message: 'Warning, this issue has gone 30 days without activity.  If you are waiting on the project owner, ping him directly @theaccordance'
+          close-message: 'This issue has been closed after 60 days of inactivity.  If you are waiting on the owner to act, you are welcome to ping him on other platforms, https://contact.mainwaring.dev'
+          days-before-pr-stale: 30
+          days-before-pr-close: 30
+          exempt-draft-pr: true
+      - name: Print outputs
+        run: echo ${{ join(steps.stale.outputs.*, ',') }}
