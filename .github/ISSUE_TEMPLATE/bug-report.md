@@ -3,7 +3,7 @@ name: Bug Report
 about: Report issues with using this action
 title: ''
 labels: bug
-assignees: ''
+assignees: '@theaccordance'
 ---
 
 ## Describe your issue

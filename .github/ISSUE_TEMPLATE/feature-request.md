@@ -3,7 +3,7 @@ name: Feature request
 about: Propose a new feature or an enhancement
 title: ''
 labels: enhancement
-assignees: ''
+assignees: '@theaccordance'
 ---
 
 ## The problem
