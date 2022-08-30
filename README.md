@@ -1,6 +1,7 @@
 # Balena Push
-[![CodeFactor](https://www.codefactor.io/repository/github/theaccordance/balena-push/badge)](https://www.codefactor.io/repository/github/theaccordance/balena-push)
+![Github Actions](https://img.shields.io/badge/Github-Actions-yellow)
 ![Latest Version](https://img.shields.io/github/v/release/theaccordance/balena-push?label=Latest%20Version)
+[![CodeFactor](https://www.codefactor.io/repository/github/theaccordance/balena-push/badge)](https://www.codefactor.io/repository/github/theaccordance/balena-push)
 ![Last Commit](https://img.shields.io/github/last-commit/theaccordance/balena-push)
 ![Open Bugs](https://img.shields.io/github/issues/theaccordance/balena-push/bug?color=red&label=Bugs)
 ![Feature Requests](https://img.shields.io/github/issues/theaccordance/balena-push/enhancement?color=blue&label=Feature%20Requests)
