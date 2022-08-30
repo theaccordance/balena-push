@@ -1,6 +1,6 @@
-# Balena Deploy
+# Balena Push
 
-Continuously deliver your applications to [BalenaCloud](https://www.balena.io/). A faster drop-in replacement to [Balena Push](https://github.com/theaccordance/balena-push).
+Continuously deliver your applications to [BalenaCloud](https://www.balena.io/).
 
 ## Inputs
 
@@ -18,7 +18,7 @@ _Optional_: Provide a sub-path to the location for application being deployed to
 
 ## Workflow Example
 ```yaml
-name: BalenaCloud Push
+name: Balena Push
 
 on:
   push:
