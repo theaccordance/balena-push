@@ -1,8 +1,8 @@
-name: 'Push to BalenaCloud'
+name: 'Push to Balena'
 branding:
   color: "yellow"
-  icon: "box"
-description: 'Push your code to BalenaCloud using balena-cli'
+  icon: "upload-cloud"
+description: 'Continuously push your code to your IoT fleets on Balena'
 inputs:
   api-token:
     description: 'BalenaCloud API Key'
