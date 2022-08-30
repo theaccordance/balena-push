@@ -10,11 +10,11 @@ Continuously deliver your applications to [BalenaCloud](https://www.balena.io/).
 
 ## Inputs
 
-| Attribute  | Required?  | Purpose |
-|------------|------------|---------|
-| `api-token` | **Yes***   | A BalenaCloud API Token, used to authenticate with BalenaCloud.  API keys can be created in the [user settings for BalenaCloud](https://dashboard.balena-cloud.com/preferences/access-tokens). |
-| `application-name` | **Yes***   | The target application on BalenaCloud |
-| `application-path` | _Optional_ | Provide a sub-path to the location for application being deployed to BalenaCloud.  Defaults to the workspace root. |
+| Attribute          | Required?  | Purpose                                                                                                                                                                                        |
+|--------------------|------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `api-token`        | **Yes***   | A BalenaCloud API Token, used to authenticate with BalenaCloud.  API keys can be created in the [user settings for BalenaCloud](https://dashboard.balena-cloud.com/preferences/access-tokens). |
+| `application-name` | **Yes***   | The target application on BalenaCloud                                                                                                                                                          |
+| `application-path` | _Optional_ | Provide a sub-path to the location for application being deployed to BalenaCloud.  Defaults to the workspace root.                                                                             |
 
 ## Examples
 
